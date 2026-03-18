@@ -9,6 +9,24 @@ O setup vai te fazer algumas perguntas e configurar tudo pro seu negócio em pou
 
 <!-- Este arquivo será atualizado pelo /setup com o contexto do seu negócio. -->
 
+## Aprender com correções
+
+Quando o usuário corrigir algo, melhorar uma resposta ou dar uma instrução que parece permanente (frases como "na verdade é assim", "não faça mais isso", "prefiro assim", "sempre que...", "evita...", "da próxima vez..."), perguntar:
+
+> "Quer que eu salve isso pra não precisar repetir?"
+
+Se sim, identificar onde faz mais sentido salvar:
+
+- **Sobre o negócio** (quem são os clientes, como funciona a empresa, serviços, mercado) → adicionar em `_contexto/empresa.md`
+- **Sobre preferências e estilo** (tom de voz, formato de resposta, o que evitar, como estruturar textos) → adicionar em `_contexto/preferencias.md`
+- **Regra de comportamento nessa pasta** (onde salvar arquivos, como nomear, fluxos específicos) → adicionar no próprio `CLAUDE.md`
+
+Salvar com uma linha nova clara, sem reformatar o arquivo inteiro. Confirmar o que foi salvo mostrando a linha adicionada.
+
+Não perguntar se a correção for óbvia de contexto imediato (ex: "na verdade o arquivo se chama X"). Só perguntar quando a informação tiver valor duradouro.
+
+---
+
 ## Criação de skills
 
 Quando o usuário pedir pra criar uma nova skill:
