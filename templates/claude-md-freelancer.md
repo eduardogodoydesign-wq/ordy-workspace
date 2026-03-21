@@ -3,6 +3,18 @@
 > Template pra freelancers que trabalham com múltiplos clientes.
 > Preencha os campos com colchetes e delete este aviso.
 
+## O que é esse workspace
+
+[Descreve em uma ou duas frases o que essa pasta representa. Ex: "Workspace de trabalho freelancer. Aqui ficam todos os meus clientes, entregas e comunicações."]
+
+**Estrutura de pastas:**
+- `_contexto/` — memória do sistema (não apagar)
+- `clientes/` — um subdiretório por cliente
+- `conteudo/` — produção de conteúdo
+- `templates/` — modelos reutilizáveis
+- `dados/` — arquivos para análise (CSV, PDF, etc)
+- `tarefas.md` — lista de tarefas corrente
+
 ## Quem sou
 
 Sou [nome], freelancer de [área: design / copywriting / dev / marketing / etc].

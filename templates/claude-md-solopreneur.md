@@ -3,6 +3,18 @@
 > Template pra solopreneurs, criadores e profissionais independentes.
 > Preencha os campos com colchetes e delete este aviso.
 
+## O que é esse workspace
+
+[Descreve em uma ou duas frases o que essa pasta representa. Ex: "Workspace principal do meu negócio. Aqui eu produzo conteúdo, crio propostas e toco as operações do dia a dia."]
+
+**Estrutura de pastas:**
+- `_contexto/` — memória do sistema (não apagar)
+- `conteudo/` — produção de conteúdo por tipo
+- `projetos/` — projetos internos
+- `templates/` — modelos reutilizáveis
+- `dados/` — arquivos para análise (CSV, PDF, etc)
+- `tarefas.md` — lista de tarefas corrente
+
 ## Quem sou
 
 Sou [nome]. [O que você faz em uma frase].

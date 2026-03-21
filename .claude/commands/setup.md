@@ -138,6 +138,12 @@ Aguardar o usuário colar a resposta. Com o que vier:
 
 *(Ou os dois — pode responder livremente)*
 
+### Pergunta 4.5 — Foco atual
+
+"E qual é o seu principal foco agora? O que você tá tentando fazer ou resolver nos próximos meses?"
+
+*(Pode ser um lançamento, crescer um canal, fechar mais clientes, organizar a operação, aprender uma ferramenta — qualquer coisa que esteja na cabeça)*
+
 ### Pergunta 5
 "Quais ferramentas você usa hoje no trabalho? Cita as principais."
 
@@ -207,6 +213,12 @@ Substitua o conteúdo placeholder pelo CLAUDE.md real do usuário:
 ```markdown
 # [Nome do Negócio] — Claude Code OS
 
+## O que é esse workspace
+[uma ou duas frases descrevendo o que essa pasta representa pro negócio do usuário]
+
+**Estrutura de pastas:**
+[lista das pastas criadas e o que vai em cada uma — gerada conforme o perfil detectado]
+
 ## Sobre o negócio
 [descrição em 2-4 linhas com o que foi dito]
 
@@ -224,9 +236,6 @@ Substitua o conteúdo placeholder pelo CLAUDE.md real do usuário:
 
 ## Ferramentas conectadas
 [lista das ferramentas que usa — atualizar conforme MCPs forem instalados]
-
-## Estrutura de pastas
-[descrição da estrutura criada, pra o Claude saber onde salvar cada coisa]
 ```
 
 ### 2. Criar `_contexto/empresa.md`
@@ -247,7 +256,28 @@ Substitua o conteúdo placeholder pelo CLAUDE.md real do usuário:
 [qualquer informação relevante que surgiu nas respostas]
 ```
 
-### 3. Criar `_contexto/preferencias.md`
+### 3. Criar `_contexto/estrategia.md`
+
+```markdown
+# Foco Atual — [Nome]
+
+## Fase
+[Em que fase do negócio o usuário está agora — lançamento, crescimento, organização, etc]
+
+## Prioridade principal
+[O que foi dito como foco principal agora]
+
+## O que pode esperar
+[O que não é prioridade no momento — ajuda o Claude a não sugerir fora de hora]
+
+## Contexto com prazo
+[Datas ou eventos relevantes mencionados, se houver]
+
+---
+*Atualize esse arquivo quando suas prioridades mudarem.*
+```
+
+### 4. Criar `_contexto/preferencias.md`
 
 ```markdown
 # Preferências de Comunicação
@@ -265,12 +295,12 @@ Substitua o conteúdo placeholder pelo CLAUDE.md real do usuário:
 [qualquer outra preferência mencionada]
 ```
 
-### 4. Pré-preencher `marca/design-guide.md`
+### 5. Pré-preencher `marca/design-guide.md`
 
 Se o usuário descreveu cores e estilo, preencha com o que foi dito.
 Se não tem identidade definida, preencha com campos em branco e um comentário orientando como preencher depois.
 
-### 5. Criar estrutura de pastas conforme o perfil
+### 6. Criar estrutura de pastas conforme o perfil
 
 **Perfil agência / freelancer (atende clientes):**
 ```
@@ -306,7 +336,7 @@ curriculo/
 tarefas.md
 ```
 
-### 6. Criar `_configurar-mcps.md`
+### 7. Criar `_configurar-mcps.md`
 
 Gere uma lista personalizada baseada no perfil e nas ferramentas que o usuário citou. Use os dados de `mcps/por-perfil.md` como referência, mas personalize pra o que foi dito.
 
@@ -347,8 +377,8 @@ Após gerar todos os arquivos, envie uma mensagem de encerramento:
 > "[Nome], seu sistema tá configurado.
 >
 > Aqui está o que foi criado:
-> - CLAUDE.md — o Claude agora sabe quem você é e como trabalha
-> - _contexto/ — contexto e preferências salvos
+> - CLAUDE.md — o Claude agora sabe quem você é, como trabalha e onde fica cada coisa
+> - _contexto/ — negócio, preferências e foco atual salvos
 > - marca/design-guide.md — identidade visual [preenchida / pronta pra preencher]
 > - Estrutura de pastas pro seu perfil de [perfil detectado]
 > - _configurar-mcps.md — [N] MCPs recomendados pro que você faz

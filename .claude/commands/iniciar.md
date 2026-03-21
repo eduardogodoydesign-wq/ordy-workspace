@@ -11,14 +11,15 @@ Use essa skill no começo de cada sessão de trabalho.
 
 1. Verificar se `_contexto/empresa.md` existe e está configurado (sem `<!-- NOT CONFIGURED -->`)
 2. Verificar se `_contexto/preferencias.md` existe e está configurado
-3. Ler CLAUDE.md se existir
-4. Apresentar um resumo de contexto e perguntar o que o usuário quer fazer
+3. Verificar se `_contexto/estrategia.md` existe e está configurado
+4. Ler CLAUDE.md se existir
+5. Apresentar um resumo de contexto e perguntar o que o usuário quer fazer
 
 ## Fluxo
 
 ### Se os arquivos de memória existem e estão configurados
 
-Leia `_contexto/empresa.md` e `_contexto/preferencias.md`.
+Leia `_contexto/empresa.md`, `_contexto/preferencias.md` e `_contexto/estrategia.md`.
 
 Apresente um resumo curto e direto no formato:
 
@@ -26,7 +27,7 @@ Apresente um resumo curto e direto no formato:
 Tudo certo. Contexto carregado:
 
 **Negócio:** [nome e o que faz, em uma linha]
-**Foco atual:** [projetos/clientes relevantes se mencionados]
+**Foco agora:** [prioridade principal de estrategia.md — se não configurado, omitir essa linha]
 **Lembretes:** [qualquer preferência importante, ex: "sem travessões", "responder em PT"]
 
 O que você quer fazer hoje?
