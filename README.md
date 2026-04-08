@@ -61,6 +61,7 @@ O Claude vai te fazer algumas perguntas e configurar o sistema pro seu negócio.
 - `/roteiro-post` — transforma ideia ou texto em roteiro de post ou vídeo
 - `/email-profissional` — rascunha email profissional a partir de contexto livre
 - `/atualizar` — varre o projeto e atualiza os arquivos de contexto que ficaram desatualizados
+- `/novo-projeto` — cria pasta de projeto novo com CLAUDE.md dedicado (entrevista sobre o projeto)
 
 **Pastas geradas pelo `/setup`:**
 - `_contexto/` — contexto do seu negócio e preferências
